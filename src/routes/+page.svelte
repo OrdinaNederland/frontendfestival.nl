@@ -1,0 +1,17 @@
+<script>
+	import HeaderSection from './HeaderSection.svelte';
+	import InfoSection from './InfoSection.svelte';
+	import ScheduleSection from './ScheduleSection.svelte';
+</script>
+
+<svelte:head>
+	<title>Frontend Festival 2023</title>
+	<meta
+		name="description"
+		content="Let's talk about Frontend: tijdens het Frontend festival nemen we je mee in interessante onderwerpen over Frontend"
+	/>
+</svelte:head>
+
+<HeaderSection />
+<InfoSection />
+<ScheduleSection />

@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Dev" type="NodeJSConfigurationType" application-parameters="dev" path-to-node="$USER_HOME$/.nvm/versions/node/v16.13.0/bin/yarn" working-dir="$PROJECT_DIR$">
+    <method v="2" />
+  </configuration>
+</component>
