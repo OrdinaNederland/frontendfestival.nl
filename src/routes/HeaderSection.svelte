@@ -11,8 +11,11 @@
 				<img src="/logo.svg" alt="Frontend Festival Logo" class="" />
 			</a>
 		</h1>
-		<a class="inline" href="#info">
-			<TagBlock>info.scrollIntoView();</TagBlock>
+		<a class="inline" href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447">
+			<TagBlock>tickets.getYoursFor<span class="font-bold">Free</span>();</TagBlock>
+		</a>
+		<a class="inline mt-5" href="#info">
+			<TagBlock backgroundColor="fountain">info.scrollIntoView();</TagBlock>
 		</a>
 	</div>
 </header>

@@ -33,12 +33,14 @@
 		/>
 	{/if}
 	<div
-		class="py-4 inline"
+		class="py-4 inline pl-4 pr-4"
 		class:bg-ordina={backgroundColor === 'ordina'}
 		class:bg-shark={backgroundColor === 'shark'}
 		class:bg-fountain={backgroundColor === 'fountain'}
-		class:pl-4={direction === 'right'}
-		class:pr-4={direction === 'left'}
+		class:md:pl-4={direction === 'right'}
+		class:md:pr-0={direction === 'right'}
+		class:md:pr-4={direction === 'left'}
+		class:md:pl-0={direction === 'left'}
 	>
 		<slot />
 	</div>
