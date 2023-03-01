@@ -8,6 +8,31 @@
 		<TagBlock class="max-w-lg float-right" direction="left" extend="true">
 			<div class="flex flex-col w-full">
 				<div class="flex grow items-center gap-2">
+					<div
+						class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden rounded-full bg-fountain"
+					>
+						<span class="font-medium text-fountain-800 text-2xl">KI</span>
+					</div>
+					<div class="flex flex-col grow">
+						<div class="text-2xl">Kitze</div>
+						<div class="text-xl">Undefined @ Null</div>
+					</div>
+				</div>
+				<div>
+					Uncaught TypeError: Cannot read properties of undefined (reading 'bioKitze') - Coming
+					soon!
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock
+			class="max-w-lg float-left mt-5 lg:mt-24"
+			direction="right"
+			backgroundColor="shark"
+			extend="true"
+		>
+			<div class="flex flex-col w-full">
+				<div class="flex grow items-center gap-2">
 					<img
 						class="h-14 w-14 aspect-square rounded-full"
 						src="/speakers/fvp.png"
@@ -26,19 +51,40 @@
 				</div>
 			</div>
 		</TagBlock>
+
+		<TagBlock class="max-w-lg float-right mt-5 lg:mt-36" direction="left" extend="true">
+			<div class="flex flex-col w-full">
+				<div class="flex grow items-center gap-2">
+					<div
+						class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden rounded-full bg-fountain"
+					>
+						<span class="font-medium text-fountain-800 text-2xl">DE</span>
+					</div>
+					<div class="flex flex-col grow">
+						<div class="text-2xl">Davy Engone</div>
+						<div class="text-xl">Undefined @ Null</div>
+					</div>
+				</div>
+				<div>
+					Uncaught TypeError: Cannot read properties of undefined (reading 'bioDavyEngone') - Coming
+					soon!
+				</div>
+			</div>
+		</TagBlock>
+
 		<TagBlock
-			class="max-w-lg float-left mt-5 lg:mt-52"
+			class="max-w-lg float-left mt-5 lg:mt-10"
 			direction="right"
 			backgroundColor="shark"
 			extend="true"
 		>
 			<div class="flex flex-col w-full">
 				<div class="flex grow items-center gap-2">
-					<div
-						class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden rounded-full bg-fountain"
-					>
-						<span class="font-medium text-fountain-800 text-2xl">OH</span>
-					</div>
+					<img
+						class="h-14 w-14 aspect-square rounded-full"
+						src="/speakers/oh.png"
+						alt="Oscar Hahn"
+					/>
 					<div class="flex flex-col grow">
 						<div class="text-2xl">Oscar Hahn</div>
 						<div class="text-xl">Solutions Architect @ AWS</div>
@@ -52,7 +98,8 @@
 				</div>
 			</div>
 		</TagBlock>
-		<TagBlock class="max-w-lg float-right mt-5 lg:mt-40" direction="left" extend="true">
+
+		<TagBlock class="max-w-lg float-right mt-5 lg:mt-32" direction="left" extend="true">
 			<div class="flex flex-col w-full">
 				<div class="flex grow items-center gap-2">
 					<img
@@ -76,26 +123,28 @@
 		</TagBlock>
 
 		<TagBlock
-			class="max-w-lg float-left mt-5 lg:mt-52"
+			class="max-w-lg float-left mt-5 lg:mt-48"
 			direction="right"
 			backgroundColor="shark"
 			extend="true"
 		>
 			<div class="flex flex-col w-full">
 				<div class="flex grow items-center gap-2">
-					<div
-						class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden rounded-full bg-fountain"
-					>
-						<span class="font-medium text-fountain-800 text-2xl">JK</span>
-					</div>
+					<img
+						class="h-14 w-14 aspect-square rounded-full"
+						src="/speakers/jk.png"
+						alt="Oscar Hahn"
+					/>
 					<div class="flex flex-col grow">
 						<div class="text-2xl">Jorrik Kleinsma</div>
 						<div class="text-xl">Software Engineer @ Ordina</div>
 					</div>
 				</div>
 				<div>
-					Uncaught TypeError: Cannot read properties of undefined (reading
-					'infoAboutJorrikKleinsma') - Coming soon!
+					Jorrik’s first lines of code were in the days jQuery ruled. That didn’t scare him. Now he
+					has 6+ years of frontend experience using React and Vue during his day job. In the evening
+					and night hours, a lot of fun projects and other libraries passed his ‘git clone’. When
+					not coding he gets his fair share of laughs going to comedy shows.
 				</div>
 			</div>
 		</TagBlock>
