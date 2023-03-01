@@ -2,12 +2,17 @@
 	export let backgroundColor: 'shark' | 'fountain' | 'ordina' = 'ordina';
 	export let direction: 'left' | 'right' | 'both' = 'both';
 	export let extend: boolean = false;
+	export let small: boolean = false;
 
 	let componentClass;
 	export { componentClass as class };
 </script>
 
-<div class="text-white inline-flex relative {componentClass}">
+<div
+	class="inline-flex relative {componentClass} {backgroundColor === 'ordina'
+		? 'text-shark'
+		: 'text-white'}"
+>
 	{#if ['left', 'both'].indexOf(direction) > -1}
 		<svg
 			class="absolute self-stretch h-full ml-[1px] -translate-x-full"
@@ -34,12 +39,20 @@
 	{/if}
 	<div
 		class="py-4 inline pl-4 pr-4"
+		class:py-4={!small}
+		class:pl-4={!small}
+		class:pr-4={!small}
+		class:py-1={small}
+		class:pl-1={small}
+		class:pr-1={small}
 		class:bg-ordina={backgroundColor === 'ordina'}
 		class:bg-shark={backgroundColor === 'shark'}
 		class:bg-fountain={backgroundColor === 'fountain'}
-		class:md:pl-4={direction === 'right'}
+		class:md:pl-4={direction === 'right' && !small}
+		class:md:pl-1={direction === 'right' && small}
 		class:md:pr-0={direction === 'right'}
-		class:md:pr-4={direction === 'left'}
+		class:md:pr-4={direction === 'left' && !small}
+		class:md:pr-1={direction === 'left' && small}
 		class:md:pl-0={direction === 'left'}
 	>
 		<slot />
