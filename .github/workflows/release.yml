@@ -1,0 +1,30 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          package-name: rentman-dashboard
+          changelog-types: '[{"type":"feat","section":"New","hidden":false},{"type":"fix","section":"Changed and fixed","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
+#      - uses: actions/checkout@v2
+#        with:
+#          fetch-depth: 0
+#        if: ${{ steps.release.outputs.release_created }}
+#      - name: Azure Login
+#        uses: azure/login@v1
+#        with:
+#          creds: ${{ secrets.AZURE_CREDENTIALS }}
+#        if: ${{ steps.release.outputs.release_created }}
+#      - name: Azure CLI script
+#        uses: azure/CLI@v1
+#        with:
+#          inlineScript: |
+#            az webapp up --resource-group frontendfestival --name FrontendFestival --runtime "NODE|18-lts"
