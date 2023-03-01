@@ -16,7 +16,7 @@
 		<div class="flex gap-5 w-screen max-w-xl items-center">
 			<div class="text-2xl pl-5" />
 			<div class="flex flex-col md:flex-row gap-2 items-center">
-				<a target="_blank" rel="noreferrer" href=""
+				<a target="_blank" rel="noreferrer" href="https://goo.gl/maps/xumZR7ZQR53VJTQk7"
 					><img
 						class="w-48 h-48 p-1 rounded-full ring-2 ring-fountain-300"
 						src="/map.png"
