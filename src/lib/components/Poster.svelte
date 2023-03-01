@@ -1,36 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { random, sample } from 'lodash-es';
+	import PosterBall from '$lib/components/PosterBall.svelte';
 
 	const BLUR_RADIUS = 64;
 	const BALL_SIZE = [400, 600];
+	const SPEED = [50, 70];
 
 	let width;
 	let height;
 	let balls = [];
 	let wrapper: HTMLElement;
 	let lastBallId = 0;
-	let animationFrame: number;
-
-	function move() {
-		// Moving them all at once, for performance.
-		// In-place mutation of the balls array makes Svelte draw them one-by-one.
-		let newBalls = [...balls];
-		newBalls.forEach((ball, ballIndex) => {
-			if (
-				ball.left < width + ball.size + BLUR_RADIUS &&
-				ball.top < height + ball.size + BLUR_RADIUS
-			) {
-				ball.left += ball.speed / 10;
-				ball.top += ball.yMove * (1 / ball.speed);
-			} else {
-				newBalls[ballIndex] = generateBall();
-			}
-		});
-		balls = newBalls;
-
-		animationFrame = requestAnimationFrame(move);
-	}
 
 	function setWidthHeight() {
 		width = wrapper.clientWidth;
@@ -54,10 +35,11 @@
 				'#FF8133',
 				'#FFFFFF'
 			]),
-			speed: random(5, 15),
-			yMove: random(-1, 1, true)
+			speed: random(SPEED[0], SPEED[1])
 		};
 	}
+
+	$: console.log(balls.length);
 
 	onMount(() => {
 		setWidthHeight();
@@ -78,17 +60,11 @@
 				balls.push(generateBall(random(xVal, xVal + 200), random(yVal, yVal + 200)));
 			}
 		}
-
-		animationFrame = requestAnimationFrame(move);
-		return () => cancelAnimationFrame(animationFrame);
 	});
 </script>
 
 <div class="absolute w-full h-full overflow-hidden bg-white z-10 top-0 left-0" bind:this={wrapper}>
 	{#each balls as ball, i (ball.id)}
-		<div
-			class="absolute pointer-events-none blur-3xl rounded-full"
-			style="background-color: {ball.backgroundColor}; width: {ball.size}px; height: {ball.size}px; z-index: {ball.zIndex}; top: {ball.top}px; left: {ball.left}px;"
-		/>
+		<PosterBall {...ball} screenWidth={width} on:done={() => (balls[i] = generateBall())} />
 	{/each}
 </div>
