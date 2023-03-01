@@ -46,7 +46,7 @@
 			<div class="text-2xl pl-5">18:00</div>
 			<div class="inline-flex flex-col grow">
 				<div class="text-2xl">Artistic Bugs</div>
-				<div class="text-xl">Jorrik Kleinsma (Ordina)</div>
+				<div class="text-xl">Jorrik Klijnsma (Ordina)</div>
 				<div class="text-lg">When my bug became art; A different perspective.</div>
 			</div>
 		</div>

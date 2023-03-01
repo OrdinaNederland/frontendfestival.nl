@@ -2,8 +2,8 @@
 	import TagBlock from '$lib/components/TagBlock.svelte';
 </script>
 
-<div class="w-full py-10 bg-fountain text-black" id="speakers">
-	<div class="text-4xl w-full text-center mb-5">Speakers</div>
+<div class="w-full py-10 bg-shark text-white" id="speakers">
+	<div class="text-4xl w-full text-center mb-5">Practical information</div>
 	<div class="w-full max-w-6xl m-auto">
 		<TagBlock class="max-w-lg float-right" direction="left" extend="true">
 			<div class="flex flex-col w-full">
