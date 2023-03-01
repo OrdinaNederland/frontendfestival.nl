@@ -11,7 +11,7 @@
 					<img
 						class="h-14 w-14 aspect-square rounded-full"
 						src="/speakers/fvp.png"
-						alt="Picture of Frank van Puffelen"
+						alt="Frank van Puffelen"
 					/>
 					<div class="flex flex-col grow">
 						<div class="text-2xl">Frank van Puffelen / puf</div>
@@ -58,7 +58,7 @@
 					<img
 						class="h-14 w-14 aspect-square rounded-full"
 						src="/speakers/rs.png"
-						alt="Picture of Robbin Schepers"
+						alt="Robbin Schepers"
 					/>
 					<div class="flex flex-col grow">
 						<div class="text-2xl">Robbin Schepers / Roboroads</div>
