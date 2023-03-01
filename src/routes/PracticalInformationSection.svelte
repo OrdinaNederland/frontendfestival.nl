@@ -2,7 +2,10 @@
 	import TagBlock from '$lib/components/TagBlock.svelte';
 </script>
 
-<div class="bg-shark text-white py-10 w-full flex-center flex-col" id="practical-information">
+<div
+	class="bg-shark text-white py-10 w-full flex-center flex-col relative"
+	id="practical-information"
+>
 	<div class="text-4xl">Practical information</div>
 
 	<TagBlock class="mt-5" direction="right" extend="true" backgroundColor="ordina">
@@ -42,5 +45,14 @@
 		href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447"
 	>
 		<TagBlock class="text-xl">tickets.getYoursFor<span class="font-bold">Free</span>();</TagBlock>
+	</a>
+
+	<a
+		class="inline mt-10"
+		target="_blank"
+		rel="noreferrer"
+		href="https://github.com/OrdinaNederland/frontendfestival.nl"
+	>
+		<TagBlock backgroundColor="fountain" small>Source on GitHub</TagBlock>
 	</a>
 </div>
