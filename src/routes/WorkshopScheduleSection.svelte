@@ -3,8 +3,8 @@
 </script>
 
 <div class="bg-western text-black py-10 w-full flex-center flex-col" id="workshops">
-	<div class="text-4xl">Workshop schedule</div>
-	<div class="text-xl">
+	<div class="text-4xl px-2">Workshop schedule</div>
+	<div class="text-xl px-2">
 		If you want to attend to workshops, you have to register with them as well!
 	</div>
 	<TagBlock class="mt-5" direction="right" extend="true" backgroundColor="shark">

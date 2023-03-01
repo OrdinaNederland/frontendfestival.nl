@@ -3,8 +3,8 @@
 </script>
 
 <div class="bg-shark text-white py-10 w-full flex-center flex-col" id="schedule">
-	<div class="text-4xl">Speaker schedule</div>
-	<div class="text-xl">The following schedule is not final and is subject to change.</div>
+	<div class="text-4xl px-2">Speaker schedule</div>
+	<div class="text-xl px-2">The following schedule is not final and is subject to change.</div>
 	<TagBlock class="mt-5" direction="right" extend="true" backgroundColor="fountain">
 		<div class="flex gap-5 w-screen max-w-xl">
 			<div class="text-2xl pl-5 sm:pl-0">16:00</div>
