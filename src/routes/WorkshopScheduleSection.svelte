@@ -32,21 +32,11 @@
 						<div class="text-xl">- TypeScript</div>
 						<div class="text-lg">Davy Engone</div>
 						<div>Type Programming with TypeScript.</div>
-						<a href="javascript:void(0);">
-							<TagBlock small backgroundColor="ordina" class="font-bold ml-6"
-								>Register here</TagBlock
-							>
-						</a>
 					</div>
 					<div class="grow flex flex-col">
 						<div class="text-xl">- Flutter</div>
 						<div class="text-lg">Robbin Schepers (Ordina)</div>
 						<div>Creating a review app in 90 minutes using Flutter 3.</div>
-						<a href="javascript:void(0);">
-							<TagBlock small backgroundColor="ordina" class="font-bold ml-6"
-								>Register here</TagBlock
-							>
-						</a>
 					</div>
 				</div>
 			</div>
