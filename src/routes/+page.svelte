@@ -1,6 +1,7 @@
 <script>
 	import HeaderSection from './HeaderSection.svelte';
 	import InfoSection from './InfoSection.svelte';
+	import PracticalInformationSection from './PracticalInformationSection.svelte';
 	import SpeakerScheduleSection from './SpeakerScheduleSection.svelte';
 	import SpeakerSection from './SpeakerSection.svelte';
 	import WorkshopScheduleSection from './WorkshopScheduleSection.svelte';
@@ -19,3 +20,4 @@
 <SpeakerScheduleSection />
 <WorkshopScheduleSection />
 <SpeakerSection />
+<PracticalInformationSection />
