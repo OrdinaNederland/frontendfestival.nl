@@ -11,7 +11,12 @@
 				<img src="/logo.svg" alt="Frontend Festival Logo" class="" />
 			</a>
 		</h1>
-		<a class="inline" target="_blank" href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447">
+		<a
+			class="inline"
+			target="_blank"
+			rel="noreferrer"
+			href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447"
+		>
 			<TagBlock class="text-xl">tickets.getYoursFor<span class="font-bold">Free</span>();</TagBlock>
 		</a>
 		<a class="inline mt-5" href="#info">
