@@ -24,12 +24,15 @@
 		endLeft = screenWidth + BLUR_RADIUS + size;
 		transitionTime = Math.round(((endLeft - left) / speed) * 1000);
 
-		let timeout = setTimeout(() => {
-			started = true;
+		let timeout;
+		if (screenWidth > 768) {
 			timeout = setTimeout(() => {
-				dispatch('done');
-			}, transitionTime);
-		}, 5);
+				started = true;
+				timeout = setTimeout(() => {
+					dispatch('done');
+				}, transitionTime);
+			}, 5);
+		}
 
 		return () => {
 			clearTimeout(timeout);
@@ -39,7 +42,7 @@
 
 <div
 	class="ball"
-	class:started
+	class:started={started && screenWidth > 768}
 	style="
 	  --blurRadius: {BLUR_RADIUS};
     --backgroundColor: {backgroundColor};

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { random, sample } from 'lodash-es';
+	import { debounce, random, sample } from 'lodash-es';
 	import PosterBall from '$lib/components/PosterBall.svelte';
 
 	const BLUR_RADIUS = 64;
@@ -13,9 +13,29 @@
 	let wrapper: HTMLElement;
 	let lastBallId = 0;
 
+	const regenerate = debounce(() => {
+		balls = [];
+		for (
+			let x = Math.floor((-1 * BALL_SIZE[1]) / 200);
+			x < Math.ceil((width + BALL_SIZE[1]) / 200);
+			x++
+		) {
+			for (
+				let y = Math.floor((-1 * BALL_SIZE[0]) / 200);
+				y < Math.ceil((height + BALL_SIZE[0]) / 200);
+				y++
+			) {
+				let xVal = x * 200;
+				let yVal = y * 200;
+				balls.push(generateBall(random(xVal, xVal + 200), random(yVal, yVal + 200)));
+			}
+		}
+	}, 250);
+
 	function setWidthHeight() {
 		width = wrapper.clientWidth;
 		height = wrapper.clientHeight;
+		regenerate();
 	}
 
 	function generateBall(left?: number, top?: number) {
@@ -44,22 +64,6 @@
 	onMount(() => {
 		setWidthHeight();
 		window.addEventListener('resize', setWidthHeight);
-
-		for (
-			let x = Math.floor((-1 * BALL_SIZE[1]) / 200);
-			x < Math.ceil((width + BALL_SIZE[1]) / 200);
-			x++
-		) {
-			for (
-				let y = Math.floor((-1 * BALL_SIZE[0]) / 200);
-				y < Math.ceil((height + BALL_SIZE[0]) / 200);
-				y++
-			) {
-				let xVal = x * 200;
-				let yVal = y * 200;
-				balls.push(generateBall(random(xVal, xVal + 200), random(yVal, yVal + 200)));
-			}
-		}
 	});
 </script>
 
