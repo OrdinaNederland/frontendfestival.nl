@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/OrdinaNederland/frontendfestival.nl/compare/v1.0.0...v1.1.0) (2023-03-01)
+
+
+### New
+
+* Added link to the github ([234f334](https://github.com/OrdinaNederland/frontendfestival.nl/commit/234f3340b2dfa976a4579f415012289159d8eb93))
+
+
+### Miscellaneous
+
+* Edit sitemap timestamp ([70177f4](https://github.com/OrdinaNederland/frontendfestival.nl/commit/70177f440b69e436aa4287d9c29a6213fdc1b0f2))
+* **readme:** Added more to techstack ([d96b3da](https://github.com/OrdinaNederland/frontendfestival.nl/commit/d96b3da31686551df7a16a4990762da47426adac))
+* Updated readme ([452d1e0](https://github.com/OrdinaNederland/frontendfestival.nl/commit/452d1e083df7e43850d4031be636257bfbd4a1b0))
+
 ## 1.0.0 (2023-03-01)
 
 
