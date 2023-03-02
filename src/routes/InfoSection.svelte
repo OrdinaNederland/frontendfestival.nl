@@ -2,7 +2,7 @@
 	import TagBlock from '$lib/components/TagBlock.svelte';
 </script>
 
-<div class="w-full py-10 bg-western text-black">
+<div class="w-full py-32 bg-western text-black">
 	<div class="text-xl w-full max-w-6xl m-auto" id="info">
 		<TagBlock class="max-w-lg float-left" direction="right" extend="true">
 			April 13th Ordina is organizing FRONTEND FESTIVAL. An event with international speakers and
@@ -10,7 +10,7 @@
 			atmosphere and more…
 		</TagBlock>
 		<TagBlock
-			class="max-w-lg float-right mt-5 lg:mt-32"
+			class="max-w-lg float-right mt-10 lg:mt-48"
 			direction="left"
 			backgroundColor="shark"
 			extend="true"
