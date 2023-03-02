@@ -4,7 +4,7 @@
 	import PosterBall from '$lib/components/PosterBall.svelte';
 
 	const BLUR_RADIUS = 64;
-	const BALL_SIZE = [400, 600];
+	const BALL_SIZE = [600, 800];
 	const SPEED = [50, 70];
 
 	let width;
@@ -16,18 +16,18 @@
 	const regenerate = debounce(() => {
 		balls = [];
 		for (
-			let x = Math.floor((-1 * BALL_SIZE[1]) / 200);
-			x < Math.ceil((width + BALL_SIZE[1]) / 200);
+			let x = Math.floor((-1 * BALL_SIZE[1]) / 400);
+			x < Math.ceil((width + BALL_SIZE[1]) / 400);
 			x++
 		) {
 			for (
-				let y = Math.floor((-1 * BALL_SIZE[0]) / 200);
-				y < Math.ceil((height + BALL_SIZE[0]) / 200);
+				let y = Math.floor((-1 * BALL_SIZE[0]) / 400);
+				y < Math.ceil((height + BALL_SIZE[0]) / 400);
 				y++
 			) {
-				let xVal = x * 200;
-				let yVal = y * 200;
-				balls.push(generateBall(random(xVal, xVal + 200), random(yVal, yVal + 200)));
+				let xVal = x * 400;
+				let yVal = y * 400;
+				balls.push(generateBall(random(xVal, xVal + 400), random(yVal, yVal + 400)));
 			}
 		}
 	}, 250);
@@ -52,8 +52,8 @@
 				'#61BFC3',
 				'#E6E2DB',
 				'#FF8133',
-				'#FF8133',
-				'#FFFFFF'
+				'#FF8133'
+				// '#FFFFFF'
 			]),
 			speed: random(SPEED[0], SPEED[1])
 		};
