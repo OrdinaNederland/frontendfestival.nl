@@ -61,8 +61,8 @@
 	});
 </script>
 
-<div class="absolute w-full h-full overflow-hidden top-0 left-0">
-	<div class="w-full h-full  z-10 blur-3xl bg-western" bind:this={wrapper}>
+<div class="absolute top-0 left-0 h-full w-full overflow-hidden">
+	<div class="z-10 h-full w-full bg-western blur-3xl" bind:this={wrapper}>
 		{#each balls as ball, i (ball.id)}
 			<PosterBall
 				{...ball}

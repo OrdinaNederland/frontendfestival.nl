@@ -2,18 +2,18 @@
 	import TagBlock from '$lib/components/TagBlock.svelte';
 </script>
 
-<div class="w-full py-10 bg-fountain text-black" id="speakers">
-	<div class="text-4xl w-full text-center mb-5">Speakers</div>
-	<div class="w-full max-w-6xl m-auto">
-		<TagBlock class="max-w-lg float-right" direction="left" extend="true">
-			<div class="flex flex-col w-full">
+<div class="w-full bg-fountain py-10 text-black" id="speakers">
+	<div class="mb-5 w-full text-center text-4xl">Speakers</div>
+	<div class="m-auto w-full max-w-6xl">
+		<TagBlock class="float-right max-w-lg" direction="left" extend="true">
+			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<div
-						class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden rounded-full bg-fountain"
+						class="relative inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-fountain"
 					>
-						<span class="font-medium text-fountain-800 text-2xl">KI</span>
+						<span class="text-2xl font-medium text-fountain-800">KI</span>
 					</div>
-					<div class="flex flex-col grow">
+					<div class="flex grow flex-col">
 						<div class="text-2xl">Kitze</div>
 						<div class="text-xl">Undefined @ Null</div>
 					</div>
@@ -26,19 +26,19 @@
 		</TagBlock>
 
 		<TagBlock
-			class="max-w-lg float-left mt-5 lg:mt-24"
+			class="float-left mt-5 max-w-lg lg:mt-24"
 			direction="right"
 			backgroundColor="shark"
 			extend="true"
 		>
-			<div class="flex flex-col w-full">
+			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
-						class="h-14 w-14 aspect-square rounded-full"
+						class="aspect-square h-14 w-14 rounded-full"
 						src="/speakers/fvp.png"
 						alt="Frank van Puffelen"
 					/>
-					<div class="flex flex-col grow">
+					<div class="flex grow flex-col">
 						<div class="text-2xl">Frank van Puffelen / puf</div>
 						<div class="text-xl">Firebase engineer @ Google</div>
 					</div>
@@ -52,15 +52,15 @@
 			</div>
 		</TagBlock>
 
-		<TagBlock class="max-w-lg float-right mt-5 lg:mt-36" direction="left" extend="true">
-			<div class="flex flex-col w-full">
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-36" direction="left" extend="true">
+			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<div
-						class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden rounded-full bg-fountain"
+						class="relative inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-fountain"
 					>
-						<span class="font-medium text-fountain-800 text-2xl">DE</span>
+						<span class="text-2xl font-medium text-fountain-800">DE</span>
 					</div>
-					<div class="flex flex-col grow">
+					<div class="flex grow flex-col">
 						<div class="text-2xl">Davy Engone</div>
 						<div class="text-xl">Undefined @ Null</div>
 					</div>
@@ -73,19 +73,19 @@
 		</TagBlock>
 
 		<TagBlock
-			class="max-w-lg float-left mt-5 lg:mt-10"
+			class="float-left mt-5 max-w-lg lg:mt-10"
 			direction="right"
 			backgroundColor="shark"
 			extend="true"
 		>
-			<div class="flex flex-col w-full">
+			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
-						class="h-14 w-14 aspect-square rounded-full"
+						class="aspect-square h-14 w-14 rounded-full"
 						src="/speakers/oh.png"
 						alt="Oscar Hahn"
 					/>
-					<div class="flex flex-col grow">
+					<div class="flex grow flex-col">
 						<div class="text-2xl">Oscar Hahn</div>
 						<div class="text-xl">Solutions Architect @ AWS</div>
 					</div>
@@ -99,15 +99,15 @@
 			</div>
 		</TagBlock>
 
-		<TagBlock class="max-w-lg float-right mt-5 lg:mt-32" direction="left" extend="true">
-			<div class="flex flex-col w-full">
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-32" direction="left" extend="true">
+			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
-						class="h-14 w-14 aspect-square rounded-full"
+						class="aspect-square h-14 w-14 rounded-full"
 						src="/speakers/rs.png"
 						alt="Robbin Schepers"
 					/>
-					<div class="flex flex-col grow">
+					<div class="flex grow flex-col">
 						<div class="text-2xl">Robbin Schepers / Roboroads</div>
 						<div class="text-xl">Senior Software Engineer @ Ordina</div>
 					</div>
@@ -123,19 +123,19 @@
 		</TagBlock>
 
 		<TagBlock
-			class="max-w-lg float-left mt-5 lg:mt-48"
+			class="float-left mt-5 max-w-lg lg:mt-48"
 			direction="right"
 			backgroundColor="shark"
 			extend="true"
 		>
-			<div class="flex flex-col w-full">
+			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
 					<img
-						class="h-14 w-14 aspect-square rounded-full"
+						class="aspect-square h-14 w-14 rounded-full"
 						src="/speakers/jk.png"
 						alt="Oscar Hahn"
 					/>
-					<div class="flex flex-col grow">
+					<div class="flex grow flex-col">
 						<div class="text-2xl">Jorrik Klijnsma</div>
 						<div class="text-xl">Software Engineer @ Ordina</div>
 					</div>

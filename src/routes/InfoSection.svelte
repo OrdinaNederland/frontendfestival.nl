@@ -2,15 +2,15 @@
 	import TagBlock from '$lib/components/TagBlock.svelte';
 </script>
 
-<div class="w-full py-32 bg-western text-black">
-	<div class="text-xl w-full max-w-6xl m-auto" id="info">
-		<TagBlock class="max-w-lg float-left" direction="right" extend="true">
+<div class="w-full bg-western py-32 text-black">
+	<div class="m-auto w-full max-w-6xl text-xl" id="info">
+		<TagBlock class="float-left max-w-lg" direction="right" extend="true">
 			April 13th Ordina is organizing FRONTEND FESTIVAL. An event with international speakers and
 			workshops, free of charge! You can expect new insights, lots of delicious snacks, a cozy
 			atmosphere and more…
 		</TagBlock>
 		<TagBlock
-			class="max-w-lg float-right mt-10 lg:mt-48"
+			class="float-right mt-10 max-w-lg lg:mt-48"
 			direction="left"
 			backgroundColor="shark"
 			extend="true"

@@ -3,7 +3,7 @@
 	import '../tailwind.pcss';
 </script>
 
-<div class="flex flex-col overflow-x-hidden w-screen h-screen">
+<div class="flex h-screen w-screen flex-col overflow-x-hidden">
 	<div class="min-h-screen overflow-x-hidden">
 		<slot />
 	</div>

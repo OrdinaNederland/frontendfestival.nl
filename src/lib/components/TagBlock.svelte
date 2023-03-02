@@ -9,13 +9,13 @@
 </script>
 
 <div
-	class="inline-flex relative {componentClass} {backgroundColor === 'ordina'
+	class="relative inline-flex {componentClass} {backgroundColor === 'ordina'
 		? 'text-shark'
 		: 'text-white'}"
 >
 	{#if ['left', 'both'].indexOf(direction) > -1}
 		<svg
-			class="absolute self-stretch h-full ml-[1px] -translate-x-full"
+			class="absolute ml-[1px] h-full -translate-x-full self-stretch"
 			viewBox="0 0 71 100"
 			xml:space="preserve"
 			xmlns="http://www.w3.org/2000/svg"
@@ -31,14 +31,14 @@
 		</svg>
 	{:else if extend}
 		<div
-			class="absolute self-stretch h-full ml-[1px] w-screen -translate-x-full"
+			class="absolute ml-[1px] h-full w-screen -translate-x-full self-stretch"
 			class:bg-ordina={backgroundColor === 'ordina'}
 			class:bg-shark={backgroundColor === 'shark'}
 			class:bg-fountain={backgroundColor === 'fountain'}
 		/>
 	{/if}
 	<div
-		class="py-4 inline pl-4 pr-4"
+		class="inline py-4 pl-4 pr-4"
 		class:py-4={!small}
 		class:pl-4={!small}
 		class:pr-4={!small}
@@ -59,7 +59,7 @@
 	</div>
 	{#if ['right', 'both'].indexOf(direction) > -1}
 		<svg
-			class="absolute self-stretch h-full right-0 mr-[1px] translate-x-full"
+			class="absolute right-0 mr-[1px] h-full translate-x-full self-stretch"
 			viewBox="0 0 71 100"
 			xml:space="preserve"
 			xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@
 		</svg>
 	{:else if extend}
 		<div
-			class="absolute self-stretch h-full right-0 mr-[1px] w-screen translate-x-full"
+			class="absolute right-0 mr-[1px] h-full w-screen translate-x-full self-stretch"
 			class:bg-ordina={backgroundColor === 'ordina'}
 			class:bg-shark={backgroundColor === 'shark'}
 			class:bg-fountain={backgroundColor === 'fountain'}
