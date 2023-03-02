@@ -3,5 +3,5 @@
 </script>
 
 <header class="flex-center w-full h-48 bg-shark relative" id="header">
-	<Poster colors={['#1A1D1F', '#1A1D1F', '#FF8133']} />
+	<Poster colors={['#232728', '#232728', '#FF8133']} />
 </header>
