@@ -30,7 +30,7 @@
 				balls.push(generateBall(random(xVal, xVal + 400), random(yVal, yVal + 400)));
 			}
 		}
-	}, 250);
+	}, 50);
 
 	function setWidthHeight() {
 		width = wrapper.clientWidth;

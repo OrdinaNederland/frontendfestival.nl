@@ -1,6 +1,8 @@
 <script>
 	import Poster from '$lib/components/Poster.svelte';
 	import TagBlock from '$lib/components/TagBlock.svelte';
+	import { Icon } from 'svelte-awesome';
+	import { chevronDown } from 'svelte-awesome/icons';
 </script>
 
 <header class="flex-center w-full h-[85vh] bg-shark relative" id="header">
@@ -17,10 +19,14 @@
 			rel="noreferrer"
 			href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447"
 		>
-			<TagBlock class="text-xl">tickets.getYoursFor<span class="font-bold">Free</span>();</TagBlock>
+			<TagBlock class="text-xl" backgroundColor="fountain"
+				>tickets.getYoursFor<span class="font-bold">Free</span>();</TagBlock
+			>
 		</a>
-		<a class="inline mt-5" href="#info">
-			<TagBlock class="text-xl" backgroundColor="fountain">info.scrollIntoView();</TagBlock>
-		</a>
+		<div class="absolute w-full bottom-0 left-0 flex-center">
+			<a class="inline mb-10" href="#info">
+				<Icon class="text-white opacity-75" data={chevronDown} scale="3" />
+			</a>
+		</div>
 	</div>
 </header>
