@@ -26,7 +26,7 @@
 		transitionTime = Math.round(((endLeft - left) / speed) * 1000);
 
 		let timeout;
-		if (screenWidth > 768 || !animated) {
+		if (screenWidth > 768 && animated) {
 			timeout = setTimeout(() => {
 				started = true;
 				timeout = setTimeout(() => {
