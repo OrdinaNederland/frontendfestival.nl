@@ -6,6 +6,7 @@
 
 	const BLUR_RADIUS = 64;
 
+	export let animated: boolean = false;
 	export let backgroundColor;
 	export let size;
 	export let zIndex;
@@ -25,7 +26,7 @@
 		transitionTime = Math.round(((endLeft - left) / speed) * 1000);
 
 		let timeout;
-		if (screenWidth > 768) {
+		if (screenWidth > 768 || !animated) {
 			timeout = setTimeout(() => {
 				started = true;
 				timeout = setTimeout(() => {
@@ -42,7 +43,7 @@
 
 <div
 	class="ball"
-	class:started={started && screenWidth > 768}
+	class:started={started && screenWidth > 768 && animated}
 	style="
 	  --blurRadius: {BLUR_RADIUS};
     --backgroundColor: {backgroundColor};

@@ -7,6 +7,8 @@
 	const BALL_SIZE = [600, 800];
 	const SPEED = [50, 70];
 
+	export let animated: boolean = false;
+	export let colors: string[] = ['#1A1D1F', '#61BFC3', '#61BFC3', '#E6E2DB', '#FF8133', '#FF8133'];
 	let width;
 	let height;
 	let balls = [];
@@ -46,15 +48,7 @@
 			left: left ?? -1 * BLUR_RADIUS - size,
 			size: size,
 			zIndex: random(0, 100),
-			backgroundColor: sample([
-				'#1A1D1F',
-				'#61BFC3',
-				'#61BFC3',
-				'#E6E2DB',
-				'#FF8133',
-				'#FF8133'
-				// '#FFFFFF'
-			]),
+			backgroundColor: sample(colors),
 			speed: random(SPEED[0], SPEED[1])
 		};
 	}
@@ -69,6 +63,11 @@
 
 <div class="absolute w-full h-full overflow-hidden bg-white z-10 top-0 left-0" bind:this={wrapper}>
 	{#each balls as ball, i (ball.id)}
-		<PosterBall {...ball} screenWidth={width} on:done={() => (balls[i] = generateBall())} />
+		<PosterBall
+			{...ball}
+			{animated}
+			screenWidth={width}
+			on:done={() => (balls[i] = generateBall())}
+		/>
 	{/each}
 </div>

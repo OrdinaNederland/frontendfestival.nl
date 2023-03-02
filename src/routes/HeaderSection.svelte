@@ -6,7 +6,7 @@
 </script>
 
 <header class="flex-center w-full h-[85vh] bg-shark relative" id="header">
-	<Poster />
+	<Poster animated />
 	<div class="z-50 flex flex-col justify-center max-h-full text-center">
 		<h1 class="block w-screen max-w-4xl p-20">
 			<a href="https://frontendfestival.nl">
