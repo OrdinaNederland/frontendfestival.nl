@@ -8,7 +8,7 @@
 <header class="flex-center w-full h-[85vh] bg-shark relative" id="header">
 	<Poster animated />
 	<div class="z-50 flex flex-col justify-center max-h-full text-center">
-		<h1 class="block w-screen max-w-4xl p-20">
+		<h1 class="block w-screen max-w-4xl px-5 py-20">
 			<a href="https://frontendfestival.nl">
 				<img src="/logo.svg" alt="Frontend Festival Logo" class="" />
 			</a>
@@ -19,7 +19,7 @@
 			rel="noreferrer"
 			href="https://www.eventbrite.com/e/tickets-frontend-festival-522544092447"
 		>
-			<TagBlock class="text-xl" backgroundColor="fountain">
+			<TagBlock class="text-lg" backgroundColor="fountain">
 				tickets.getYoursFor<span class="font-bold">Free</span>();
 			</TagBlock>
 		</a>
