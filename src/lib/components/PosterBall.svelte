@@ -59,7 +59,7 @@
 
 <style lang="postcss">
 	.ball {
-		@apply absolute pointer-events-none blur-3xl rounded-full;
+		@apply absolute pointer-events-none rounded-full;
 		background-color: var(--backgroundColor);
 		width: var(--size);
 		height: var(--size);
