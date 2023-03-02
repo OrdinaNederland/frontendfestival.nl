@@ -31,7 +31,7 @@
 				started = true;
 				timeout = setTimeout(() => {
 					dispatch('done');
-				}, transitionTime);
+				}, transitionTime - 5000);
 			}, 5);
 		}
 
