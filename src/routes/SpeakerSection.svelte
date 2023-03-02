@@ -148,6 +148,56 @@
 				</div>
 			</div>
 		</TagBlock>
+
+		<TagBlock class="float-right mt-5 max-w-lg lg:mt-44" direction="left" extend="true">
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/pe.png"
+						alt="Peter Eijgermans"
+					/>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Peter Eijgermans</div>
+						<div class="text-xl">Code Smith @ Ordina</div>
+					</div>
+				</div>
+				<div>
+					Peter Eijgermans is a long-time software developer and an adventurous and passionate
+					CodeSmith Frontend at Ordina Netherlands. He likes to travel around the world with his
+					bike. Always seeking for the unexpected and unknown. For his job he tries out the latest
+					techniques and frameworks. He loves to share his experience by speaking at conferences all
+					over the World and writing for the Dutch Java magazine, ToTheRoot.nl and DZone. He
+					believes that you as the front-end developer are the spider in the web to bring the user,
+					the team and the product together.
+				</div>
+			</div>
+		</TagBlock>
+
+		<TagBlock
+			class="float-left mt-5 max-w-lg lg:mt-72"
+			direction="right"
+			backgroundColor="shark"
+			extend="true"
+		>
+			<div class="flex w-full flex-col">
+				<div class="flex grow items-center gap-2">
+					<div
+						class="relative inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-fountain"
+					>
+						<span class="text-2xl font-medium text-fountain-800">RA</span>
+					</div>
+					<div class="flex grow flex-col">
+						<div class="text-2xl">Remi Appels</div>
+						<div class="text-xl">Solution Lead @ Ordina</div>
+					</div>
+				</div>
+				<div>
+					Uncaught TypeError: Cannot read properties of undefined (reading 'bioRemiAppels') - Coming
+					soon!
+				</div>
+			</div>
+		</TagBlock>
 	</div>
 	<div class="clear-both" />
 </div>

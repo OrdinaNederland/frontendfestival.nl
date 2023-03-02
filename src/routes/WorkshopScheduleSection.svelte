@@ -35,7 +35,7 @@
 					</div>
 					<div class="flex grow flex-col">
 						<div class="text-xl">- Flutter</div>
-						<div class="text-lg">Robbin Schepers (Ordina)</div>
+						<div class="text-lg">Remi Appels (Ordina)</div>
 						<div>Creating a review app in 90 minutes using Flutter 3.</div>
 					</div>
 				</div>

@@ -61,17 +61,19 @@
 		<div class="flex w-screen max-w-xl gap-5">
 			<div class="pl-5 text-2xl">19:15</div>
 			<div class="inline-flex grow flex-col">
-				<div class="text-2xl">Undefined</div>
-				<div class="text-lg">Check back later to find out!</div>
+				<div class="text-2xl">Svelte</div>
+				<div class="text-xl">Robbin Schepers (Ordina)</div>
+				<div class="text-lg">Falling in love with frontend, again!</div>
 			</div>
 		</div>
 	</TagBlock>
 	<TagBlock class="mt-2" direction="left" extend="true" backgroundColor="ordina">
 		<div class="flex w-screen max-w-xl gap-5">
-			<div class="pl-5 text-2xl">19:30</div>
+			<div class="pl-5 text-2xl">19:45</div>
 			<div class="inline-flex grow flex-col">
-				<div class="text-2xl">Null</div>
-				<div class="text-lg">Check back later to find out!</div>
+				<div class="text-2xl">Micro Frontends</div>
+				<div class="text-xl">Peter Eijgermans (Ordina)</div>
+				<div class="text-lg">Take your web apps to the next level with Micro frontends</div>
 			</div>
 		</div>
 	</TagBlock>
