@@ -59,7 +59,7 @@
 	</TagBlock>
 	<TagBlock class="mt-2" direction="right" extend="true" backgroundColor="shark">
 		<div class="flex w-screen max-w-xl gap-5">
-			<div class="pl-5 text-2xl sm:pl-0">20:00</div>
+			<div class="pl-5 text-2xl sm:pl-0">20:15</div>
 			<div class="grow text-2xl">Drinks</div>
 		</div>
 	</TagBlock>
