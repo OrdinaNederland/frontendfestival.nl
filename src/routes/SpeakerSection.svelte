@@ -55,19 +55,21 @@
 		<TagBlock class="float-right mt-5 max-w-lg lg:mt-36" direction="left" extend="true">
 			<div class="flex w-full flex-col">
 				<div class="flex grow items-center gap-2">
-					<div
-						class="relative inline-flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-fountain"
-					>
-						<span class="text-2xl font-medium text-fountain-800">DE</span>
-					</div>
+					<img
+						class="aspect-square h-14 w-14 rounded-full"
+						src="/speakers/de.png"
+						alt="Davy Engone"
+					/>
 					<div class="flex grow flex-col">
 						<div class="text-2xl">Davy Engone</div>
-						<div class="text-xl">Undefined @ Null</div>
+						<div class="text-xl">Founder @ Hackages.io</div>
 					</div>
 				</div>
 				<div>
-					Uncaught TypeError: Cannot read properties of undefined (reading 'bioDavyEngone') - Coming
-					soon!
+					Davy is a software engineer who loves types. He's building education tools for developers.
+					He loves sharing knowledge and learning from everyone. If he's not coding, he's spending
+					time with his 2 boys and his fiancée. He's also a long-distance runner and a basketball
+					player.
 				</div>
 			</div>
 		</TagBlock>
