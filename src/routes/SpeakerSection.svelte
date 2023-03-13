@@ -75,7 +75,7 @@
 		</TagBlock>
 
 		<TagBlock
-			class="float-left mt-5 max-w-lg lg:mt-10"
+			class="float-left mt-5 max-w-lg lg:mt-28"
 			direction="right"
 			backgroundColor="shark"
 			extend="true"
