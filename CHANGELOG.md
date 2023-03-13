@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.3.0](https://github.com/OrdinaNederland/frontendfestival.nl/compare/v1.2.0...v1.3.0) (2023-03-13)
+
+
+### New
+
+* Added bio of Davy Engone ([4768c85](https://github.com/OrdinaNederland/frontendfestival.nl/commit/4768c85019e4d1e3bedd066c877ec39ca8d39e79))
+
+
+### Changed and fixed
+
+* Fixed speakers spacing ([6d9cf61](https://github.com/OrdinaNederland/frontendfestival.nl/commit/6d9cf6198109526a09fe16fca8d43735b21af404))
+
+
+### Miscellaneous
+
+* **deps:** Updated dependencies ([ff75c8a](https://github.com/OrdinaNederland/frontendfestival.nl/commit/ff75c8af4cfd0e519d070511ac83ed513ed7d696))
+
 ## [1.2.0](https://github.com/OrdinaNederland/frontendfestival.nl/compare/v1.1.0...v1.2.0) (2023-03-09)
 
 
